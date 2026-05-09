@@ -1,0 +1,167 @@
+.distraction-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-xl);
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  backdrop-filter: blur(20px);
+  animation: fadeIn 0.5s ease 0.1s both;
+  flex: 1;
+  min-height: 0;
+}
+
+.distraction-header {
+  text-align: center;
+}
+
+.distraction-title {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.distraction-subtitle {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  margin-top: 0.25rem;
+}
+
+/* Main button */
+.distraction-btn {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 2px solid var(--accent-danger);
+  background: linear-gradient(135deg, rgba(255, 77, 106, 0.08), rgba(255, 77, 106, 0.02));
+  cursor: pointer;
+  overflow: hidden;
+  transition: all var(--transition-base);
+  outline: none;
+}
+
+.distraction-btn:hover:not(.disabled) {
+  transform: scale(1.05);
+  border-color: var(--accent-danger);
+  box-shadow: 0 0 30px var(--accent-danger-glow), 0 0 60px rgba(255, 77, 106, 0.1);
+}
+
+.distraction-btn:active:not(.disabled) {
+  transform: scale(0.95);
+}
+
+.distraction-btn.disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+  border-color: var(--text-muted);
+}
+
+.distraction-btn-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  z-index: 1;
+  position: relative;
+}
+
+.distraction-icon {
+  font-size: 2.5rem;
+  filter: grayscale(0);
+  transition: filter var(--transition-fast);
+}
+
+.distraction-btn.disabled .distraction-icon {
+  filter: grayscale(1);
+}
+
+.distraction-label {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--accent-danger);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-family: var(--font-family);
+}
+
+.distraction-btn.disabled .distraction-label {
+  color: var(--text-muted);
+}
+
+/* Ripple */
+.ripple {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: rgba(255, 77, 106, 0.4);
+  transform: translate(-50%, -50%);
+  animation: ripple 0.6s ease-out forwards;
+  pointer-events: none;
+}
+
+/* Count display */
+.distraction-count-display {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.count-ring {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: var(--bg-glass);
+  border: 2px solid var(--border-subtle);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all var(--transition-base);
+}
+
+.count-number {
+  font-size: 1.4rem;
+  font-weight: 800;
+  color: var(--text-primary);
+  font-variant-numeric: tabular-nums;
+  transition: color var(--transition-fast);
+}
+
+.count-number.warning {
+  color: var(--accent-warning);
+}
+
+.count-number.danger {
+  color: var(--accent-danger);
+}
+
+.count-label {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  font-weight: 500;
+}
+
+/* Tip */
+.distraction-tip {
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+  background: var(--bg-glass);
+  padding: 0.5rem 1rem;
+  border-radius: var(--radius-sm);
+  animation: fadeIn 0.3s ease;
+  text-align: center;
+  max-width: 220px;
+}
+
+.distraction-disabled-msg {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  font-style: italic;
+}

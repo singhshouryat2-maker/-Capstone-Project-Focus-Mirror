@@ -1,0 +1,72 @@
+.insights-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-xl);
+  padding: 2rem;
+  backdrop-filter: blur(20px);
+  animation: fadeIn 0.5s ease 0.2s both;
+}
+
+.insights-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.insights-title {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.insights-badge {
+  font-size: 0.6rem;
+  font-weight: 700;
+  color: var(--accent-primary-light);
+  background: rgba(124, 92, 252, 0.12);
+  padding: 0.25rem 0.6rem;
+  border-radius: 20px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  border: 1px solid rgba(124, 92, 252, 0.2);
+}
+
+.insights-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.insight-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  padding: 0.85rem 1rem;
+  background: var(--insight-bg);
+  border: 1px solid var(--insight-border);
+  border-radius: var(--radius-md);
+  animation: slideInRight 0.4s ease both;
+  transition: transform var(--transition-fast), background var(--transition-fast);
+}
+
+.insight-item:hover {
+  transform: translateX(4px);
+  background: color-mix(in srgb, var(--insight-bg) 100%, white 2%);
+}
+
+.insight-icon {
+  font-size: 1.3rem;
+  line-height: 1;
+  flex-shrink: 0;
+  margin-top: 0.1rem;
+}
+
+.insight-text {
+  font-size: 0.85rem;
+  line-height: 1.5;
+  color: var(--text-primary);
+  font-weight: 400;
+}
