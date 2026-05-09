@@ -6,6 +6,8 @@
 
 > _"Where is my time actually going when I study?"_
 
+### Live Demo: [https://capstone-project-focus-mirror.vercel.app/](https://capstone-project-focus-mirror.vercel.app/)
+
 [![React](https://img.shields.io/badge/React-19.x-61DAFB?style=for-the-badge&logo=react&logoColor=white)](https://react.dev/)
 [![Vite](https://img.shields.io/badge/Vite-8.x-646CFF?style=for-the-badge&logo=vite&logoColor=white)](https://vite.dev/)
 [![JavaScript](https://img.shields.io/badge/JavaScript-ES6+-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
