@@ -3,7 +3,6 @@ import Timer from './components/Timer';
 import DistractionButton from './components/DistractionButton';
 import FocusScore from './components/FocusScore';
 import Analytics from './components/Analytics';
-import Insights from './components/Insights';
 import SessionHistory from './components/SessionHistory';
 import StreaksGoals from './components/StreaksGoals';
 import Pomodoro from './components/Pomodoro';
@@ -17,7 +16,6 @@ import {
   getTodaySessions,
   calculateFocusScore,
 } from './utils/storage';
-import { generateInsights } from './utils/insights';
 
 import './App.css';
 
@@ -79,8 +77,6 @@ function App() {
     setCurrentScore(0);
     setSessionActive(false);
   }, [timer]);
-
-  const insights = generateInsights(sessions);
 
   return (
     <div className="app" id="focusmirror-app">
@@ -160,7 +156,6 @@ function App() {
           <div className="analytics-layout">
             <Analytics sessions={sessions} />
             <div className="analytics-side">
-              <Insights insights={insights} />
               <SessionHistory sessions={sessions} />
             </div>
           </div>
