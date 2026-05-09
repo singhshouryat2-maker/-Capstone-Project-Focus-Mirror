@@ -90,17 +90,6 @@ A full analytics view with **pure CSS charts** (no chart library), including:
 - **Summary stats** — Total focus time, session count, average score, best score
 - CSS hover tooltips on all chart elements
 
-### 🧠 Smart Insights Engine
-FocusMirror generates **pattern-based insights** by analyzing your session data using JavaScript logic — no AI API required. The insight engine detects:
-
-- **Best focus time of day** — _"Your best focus time is around 10 AM (morning)"_
-- **Session length impact** — _"You get distracted more in longer sessions"_
-- **Improvement trends** — _"Your focus is improving! Recent sessions average 85% vs 72% before"_
-- **Distraction patterns** — _"You average 1.2 distractions per session. Incredible discipline!"_
-- **Milestone recognition** — _"You've completed 15 focus sessions. You're building a strong habit!"_
-
-The insights are color-coded by type (success, warning, tip, info) and feel like genuine AI recommendations.
-
 ### 🔥 Daily Streaks
 Tracks consecutive days of focus sessions:
 - **Current streak** with escalating fire emojis (🔥, 🔥🔥, 🔥🔥🔥)
